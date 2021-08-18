@@ -1,4 +1,4 @@
-## YGXB-net.github.io
+## 放一些好玩的网页
 
-[main.html](./main.html)
+- [main.html](./main.html)
 
