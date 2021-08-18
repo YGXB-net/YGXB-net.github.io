@@ -2,15 +2,11 @@
 
 > 网页由YGXB_net无聊编写
 
+[TOC]
+
+
+
 ### 一些网页
 
 - [main.html](./main.html)
-
-
-
-哈哈哈哈哈哈
-
-
-
-
 
