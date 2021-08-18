@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://static.okjiaoyu.cn/components/common/theme/teacher/theme_22ada08.css">
+
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/page/package/detail/package-detail_9d27ac3.css">
+    <link type="text/css" rel="stylesheet" href="https://static.okjiaoyu.cn/src/widget/dialog/dialog_9c32a5a.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/page/package/detail/package-detail-list_68a84dc.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/resource-display/dialog-display_3b689e4.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/resource-display/resource-display_185c42d.css">
+    <link type="text/css" rel="stylesheet" href="https://static.okjiaoyu.cn/src/widget/pager/pager_f64da23.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/the-new-question/the-new-question_ef9b00b.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/the-new-question/plugins/shrink/shrink_71699d5.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/page-404/page-404_e185532.css">
+    <link type="text/css" rel="stylesheet" href="https://static.okjiaoyu.cn/src/widget/empty/empty_3fbfd09.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/resource-share/resource-share_2154c74.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/src/widget/bubble-tip/bubble-tip_6b7179d.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/directory-display/directory-display_aab1057.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/directory/directory_021507c.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/zoom-tip/zoom-tip_09ee96a.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.okjiaoyu.cn/components/widget/customer-service/customer-service_63c2550.css">
+    <style type="text/css">
+        .easemobim-mobile-html {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important
+        }
+
+        .easemobim-mobile-body {
+            position: absolute;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            margin: 0 !important
+        }
+
+        .easemobim-mobile-body>* {
+            display: none !important
+        }
+
+        .easemobim-mobile-body>.easemobim-chat-panel {
+            display: block !important
+        }
+
+        .easemobim-chat-panel {
+            z-index: 1000;
+            overflow: hidden;
+            position: fixed;
+            border: none;
+            width: 0;
+            height: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+            border-radius: 4px
+        }
+
+        .easemobim-chat-panel.easemobim-minimized {
+            border: none;
+            box-shadow: none;
+            height: 37px !important;
+            width: 104px !important
+        }
+
+        .easemobim-chat-panel.easemobim-minimized.easemobim-has-prompt {
+            width: 360px !important;
+            height: 270px !important
+        }
+
+        .easemobim-chat-panel.easemobim-mobile {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            left: 0 !important;
+            top: 0 !important;
+            border-radius: 0;
+            box-shadow: none
+        }
+
+        .easemobim-chat-panel.easemobim-mobile.easemobim-minimized {
+            height: 0 !important;
+            width: 0 !important
+        }
+
+        .easemobim-chat-panel.easemobim-hide {
+            visibility: hidden;
+            width: 1px !important;
+            height: 1px !important;
+            border: none
+        }
+
+        .easemobim-chat-panel.easemobim-dragging {
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, .3)
+        }
+
+        .easemobim-chat-panel.easemobim-big {
+            width: 720px
+        }
+
+        .easemobim-iframe-shadow {
+            left: auto;
+            top: auto;
+            display: none;
+            cursor: move;
+            z-index: 16777270;
+            position: fixed;
+            border: none;
+            border-radius: 4px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat
+        }
+
+        .easemobim-iframe-shadow.easemobim-dragging {
+            display: block
+        }
+
+        .easemobim-prompt-wrapper {
+            display: none;
+            z-index: 16777271;
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            border-radius: 4px;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            opacity: .7;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        .easemobim-prompt-wrapper>.loading {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            -webkit-animation: easemobim-loading-frame 1s linear infinite;
+            -moz-animation: easemobim-loading-frame 1s linear infinite;
+            animation: easemobim-loading-frame 1s linear infinite
+        }
+
+        @-webkit-keyframes easemobim-loading-frame {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @-moz-keyframes easemobim-loading-frame {
+            0% {
+                -moz-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -moz-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes easemobim-loading-frame {
+            0% {
+                -webkit-transform: rotate(0);
+                -moz-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                -moz-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        .easemobim-pc-img-view {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 16777270
+        }
+
+        .easemobim-pc-img-view>.shadow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: .5
+        }
+
+        .easemobim-pc-img-view>img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0
+        }
+
+        .easemob-invite-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 200px;
+            border: 1px solid #e6eaf2;
+            padding: 0;
+            border-radius: 0;
+            margin-left: -200px;
+            margin-top: -100px;
+            background: #fff;
+            display: none;
+            z-index: 9999
+        }
+
+        .easemob-invite-box .invite-logo {
+            width: 100%;
+            height: 45px;
+            text-align: center;
+            margin-top: 30px
+        }
+
+        .easemob-invite-box .invite-logo>img {
+            max-width: 45px;
+            max-height: 45px
+        }
+
+        .easemob-invite-box .invite-text {
+            text-align: center;
+            margin: 0 20px;
+            color: gray;
+            font-size: 12px;
+            height: 65px;
+            line-height: 65px
+        }
+
+        .easemob-invite-box .invite-text>span {
+            display: inline-block;
+            line-height: 25px;
+            vertical-align: middle
+        }
+
+        .easemob-invite-box .button {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 0;
+            margin: 0;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            background-color: #1ba8ed
+        }
+
+        .easemob-invite-box>span {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            color: gray;
+            cursor: pointer;
+            font-size: 20px
+        }
+
+        .easemob-invite-box .theme_sky {
+            background-color: #42b8f4
+        }
+
+        .easemob-invite-box .theme_tree {
+            background-color: #00b45f
+        }
+
+        .easemob-invite-box .theme_house {
+            background-color: #b50e03
+        }
+
+        .easemob-invite-box .theme_cherry {
+            background-color: #ffa0be
+        }
+
+        .easemob-invite-box .theme_orange {
+            background-color: #f49300
+        }
+
+        .easemob-invite-box .theme_grass {
+            background-color: #9ec100
+        }
+
+        .easemob-invite-box .theme_sea {
+            background-color: #00cccd
+        }
+
+        .easemob-invite-box .theme_mountion {
+            background-color: #5b799a
+        }
+
+        .easemob-invite-box .theme_moon {
+            background-color: #3977cf
+        }
+
+        .easemob-invite-box .theme_business {
+            background-color: #000
+        }
+
+        .easemob-invite-box .theme_lake {
+            background-color: #06a89c
+        }
+
+        .easemob-invite-box.easemob-mobile-invite-box {
+            width: 280px;
+            height: 140px;
+            margin-left: -140px;
+            margin-top: -70px
+        }
+
+        .easemob-invite-box.easemob-mobile-invite-box .invite-logo {
+            margin-top: 20px;
+            height: 35px
+        }
+
+        .easemob-invite-box.easemob-mobile-invite-box .invite-logo>img {
+            max-width: 35px;
+            max-height: 35px
+        }
+
+        .easemob-invite-box.easemob-mobile-invite-box .invite-text {
+            margin: 0 5px;
+            color: gray;
+            font-size: 12px;
+            height: 45px;
+            line-height: 45px
+        }
+
+        .easemob-invite-box.easemob-mobile-invite-box>div.button {
+            height: 35px;
+            line-height: 35px
+        }
+    </style>
+    <style>
+        /* Copyright (C) Microsoft Corporation. All rights reserved. */
+
+        .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+            background: #ffff00 !important;
+            color: black !important;
+        }
+
+        .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+            background: #b2d6f3 !important;
+            color: black !important;
+        }
+
+        @media screen and (-ms-high-contrast: active) {
+            .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+                -ms-high-contrast-adjust: none;
+                background-color: Highlight !important;
+                color: HighlightText !important;
+            }
+
+            .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+                -ms-high-contrast-adjust: none;
+                background: yellow !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-main-header" id="page-main-header">
+        <header>
+            <a href="https://jiaoshi.okjiaoyu.cn/" class="logo"></a>
+            <nav class="v-top">
+                <a href="https://jiaoshi.okjiaoyu.cn/#/index/index" data-page="index"><em>首页</em></a>
+                <a href="https://jiaoshi.okjiaoyu.cn/app-center" data-page="app-center"><em>应用中心</em></a>
+                <a href="https://jiaoshi.okjiaoyu.cn/published" data-page="published">教学</a>
+            </nav>
+            <div class="page-user-center">
+                <div class="header-pull-down">
+                    <span class="hpd-info">
+                        <i class="i-folder"></i>
+                        <span class="user-name">资源库</span>
+                        <span class="i-shrink"><i class="icon-white-down"></i></span>
+                    </span>
+                    <ul>
+                        <li id="nav_questions">
+                            <a href="https://jiaoshi.okjiaoyu.cn/#/material/index">素材库</a>
+                        </li>
+                        <li id="user">
+                            <a href="https://jiaoshi.okjiaoyu.cn/#/questions/mine">题库</a>
+                        </li>
+                        <li id="user">
+                            <a href="https://jiaoshi.okjiaoyu.cn/#/microvideo/index">微课库</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-pull-down">
+                    <span class="hpd-info">
+                        <span class="user-name" id="user-name" title="陈红英">陈红英</span>
+                        <span class="span-head-img">
+                            <img class="user-face-img" id="user-face-img"
+                                src="https://jiaoshi.okjiaoyu.cn/resources/img/user/female.png">
+                        </span>
+                        <span class="i-shrink"><i class="icon-white-down"></i></span>
+                    </span>
+                    <ul>
+                        <li id="nav-questions">
+                            <a href="https://jiaoshi.okjiaoyu.cn/class">我的班级</a>
+                        </li>
+                        <li id="nav-user">
+                            <a href="https://jiaoshi.okjiaoyu.cn/user_info">个人中心</a>
+                        </li>
+                        <li id="nav-notice">
+                            <a href="https://jiaoshi.okjiaoyu.cn/teachingAnnouncement">公告通知</a>
+                        </li>
+                        <li id="nav-help" class="border-top">
+                            <a href="https://jiaoshi.okjiaoyu.cn/help/help?module=operation" target="_blank">帮助中心</a>
+                        </li>
+                        <li id="nav-logout" class="border-top">
+                            <a href="https://jiaoshi.okjiaoyu.cn/logout">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="page-main-content has-header">
+        <div class="page-header mb-20" id="page-header">
+            <div class="page-header-inner">
+
+                <h1><span class="is-mine">课程包详情页</span></h1>
+            </div>
+        </div>
+        <div class="page-content-inner">
+            <div class="page-main-wrap page-res-detail">
+                <div class="resource-info mt-20 mb-20">
+                    <div class="resource_title">
+                        <div class="inline-block">
+                            <span class="ico-res-30-resourcebox"></span>
+                            <span class="f-large f-bold package-name inline-block ellipsis" title="电流和电阻，电压关系">
+                                电流和电阻，电压关系 </span>
+                        </div>
+
+                        <div class="inline-block fr count-box">
+                            <span title="收藏量" class="fr"><i class="ico-collect-num mr-5"></i><span>0</span></span>
+                        </div>
+                        <div class="infor-container mt-15">
+                            <div class="package-detail inline-block">
+                                <p class="chapter ellipsis" title=" 第十七章 欧姆定律>1 电流与电压和电阻的关系">
+                                    <span class="mr-10 system-name ellipsis"></span>
+                                    <span>第十七章 欧姆定律&gt;1 电流与电压和电阻的关系</span>
+                                </p>
+                                <p class="creat-info mt-10">
+                                    <span class="creator">
+                                        <img class="avatar inline-block"
+                                            src="https://jiaoshi.okjiaoyu.cn/resources/img/user/male.png">
+                                        <span>规划师</span>
+                                    </span>OKAY智慧学习中心福州一店
+                                    <span class="ml-20">2021-07-18 共享</span>
+                                </p>
+                            </div>
+                            <div class="operation-box inline-block fr mt-35">
+                                <a class="ml-10 f-blue cur-pointer edit" data-value="3">编辑</a>
+                                <a class="ml-10 f-blue cur-pointer fav" data-value="1">收藏</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="source-types f-small f-gray pl-20 pr-20">
+                        <span class="ellipsis mr-5" title="课件（2个）">
+                            <span>课件（<em>2</em>个）</span>
+                        </span>
+                        <span class="ellipsis mr-5" title="习题（1个）">
+                            <span>习题（<em>1</em>个）</span>
+                        </span>
+                        <span class="ellipsis mr-5" title="微课（4个）">
+                            <span>微课（<em>4</em>个）</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="resource-detail mt-20">
+                    <div class="left-show bg-white border-gray">
+                        <div class="resource-view" id="resource-view">
+                            <div class="wgt-package-detail-list">
+                                <div class="res-item" data-id="1317648" data-type="9" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-microvideo"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="探究电流与电压、电阻的关系">探究电流与电压、电阻的关系</span>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="3208524" data-type="1" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-ppt"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="17.1电流与电压、电阻的关系">17.1电流与电压、电阻的关系</span>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                            <a class="fl btn-res-download ml-20">
+                                                下载
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="3524943" data-type="9" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-microvideo"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="实验：探究电流与电压、电流与电阻的关系">实验：探究电流与电压、电流与电阻的关系</span>
+                                            <div class="original1 top-flag pos-relative">原创精品</div>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="3690221" data-type="9" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-microvideo"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="题型突破--探究型实验（探究电流与电压，电流与电阻的关系）">题型突破--探究型实验（探究电流与电压，电流与电阻的关系）</span>
+                                            <div class="original1 top-flag pos-relative">原创精品</div>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="3534803" data-type="9" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-microvideo"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="实验：探究电流与电压、电流与电阻的关系--典例分析">实验：探究电流与电压、电流与电阻的关系--典例分析</span>
+                                            <div class="original1 top-flag pos-relative">原创精品</div>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="3874036" data-type="1" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-ppt"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="2016 17.1　电流与电压和电阻的关系（池瑞霞）">2016 17.1　电流与电压和电阻的关系（池瑞霞）</span>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                            <a class="fl btn-res-download ml-20">
+                                                下载
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-item" data-id="25012" data-type="2" data-code="">
+                                    <div class="res-item-box mr-20 ml-20">
+                                        <div class="res-ico fl">
+                                            <i class="ico-res-24-simul"></i>
+                                        </div>
+                                        <div class="res-content fl">
+                                            <span class="name f-large f-black inline-block ellipsis "
+                                                title="电流与电压和电阻的关系">电流与电压和电阻的关系</span>
+                                        </div>
+                                        <div class="btn-group fr">
+                                            <a class="fl btn-res-preview ml-20">预览</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span style="clear:both"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer" id="page-footer">
+        <footer>
+            <p class="f-normal pt-15">©2019 北京点石经纬科技有限公司 | <a target="_blank" href="http://beian.miit.gov.cn/">
+                    京ICP备14011885号-9 </a> | 客服热线4009960175</p>
+            <p class="f-normal">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802022712">
+                    <span style="position:relative; top:-1px;"><i class="ico-police"></i></span>
+                    <span>京公网安备 11010802022712号</span></a>
+            </p>
+            <p class="f-small">本站所有资源均来自用户分享或战略合作平台流转而来，版权归原作者所有，如有侵犯版权，请立刻和本站联系并提供证据，本站将在三个工作日内处理。</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <div class="wgt-customer-service">
+        <a class="function-feedback">
+            <i class="ico-chat-24"></i>
+            <div class="text">OK小助理</div>
+        </a>
+    </div>
+    <div class="easemobim-prompt-wrapper">
+        <div class="loading">
+            <div class="em-widget-loading"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                    <circle opacity=".3" fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10" cx="35"
+                        cy="35" r="11"></circle>
+                    <path fill="none" stroke="#E5E5E5" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                        d="M24 35c0-6.1 4.9-11 11-11 2.8 0 5.3 1 7.3 2.8"></path>
+                </svg></div>
+        </div>
+    </div>
+    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front package-item-detail-wrap dlg-large ui-dialog-buttons ui-draggable"
+        tabindex="-1" role="dialog" aria-describedby="ks-dlg-34" aria-labelledby="ui-id-1"
+        style="height: auto; width: 800px; top: 320px; left: 216px; display: block; z-index: 151;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+                id="ui-id-1" class="ui-dialog-title">电流与电压和电阻的关系</span><button type="button"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+                role="button" title="关闭"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                    class="ui-button-text">关闭</span></button></div>
+        <div id="ks-dlg-34" class="ui-dialog-content ui-widget-content"
+            style="display: block; width: auto; min-height: 18px; max-height: none; height: auto;">
+            <div class="res-display-box score">
+                <div class="quiz-group">
+                    <div class="quiz-type-title">
+                        <span class="quiz-type-name">选择题</span>
+                        <span class="type-count">(10题)</span>
+                    </div>
+                    <div class="quiz-list">
+                        <div class="quiz-display" data-id="1292100" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">1</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-1 inline-block h-center f-small ml-10 mr-10">易</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示，电源电压不变，当开关<em>S</em>闭合时，电流表示数是1<em>A</em>；当开关<em>S</em>断开时，电流表示数是0.6<em>A</em>，则电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">与电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">的阻值之比是（ ）<br><img
+                                        src="https://qdimg.okjiaoyu.cn/4b652c9bd0fef39f68f0c48fea94034a.png"
+                                        width="119px" height="89px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>3：2<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>2：3<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>5：3<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>3：5<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> A </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用．<br>专题：应用题；电路和欧姆定律．<br>分析：分析清楚电路结构，根据并联电路特点求出通过每个电阻的电流，然后应用并联电路特点与欧姆定律求出电阻阻值之比．<br>解答：解：由电路图可知，当开关<em>S</em>闭合时，两电阻并联，电流表测干路电流，即<em>I</em>=1<em>A</em>；<br>当开关<em>S</em>断开时，电路为<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">的基本电路，电流表测电路电流，即<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=0.6<em>A</em>；<br>因为并联电路中，各支路互不影响，并且干路电流等于各支路电流之和，<br>所以通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">的电流：<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>I</em>﹣<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=1<em>A</em>﹣0.6<em>A</em>=0.4<em>A</em>；<br>因并联电路两端电压相等，<br>所以，由<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/5c62f16f6d7bb12c2c7462d9872f83bb.png"
+                                            width="20px" height="41px" class="zoomerbox">可知：<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">：<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/69f4f6cfd5dcf0406aaf17551763ee4d.png"
+                                            width="20px" height="45px" class="zoomerbox">：<img
+                                            src="https://qdimg.okjiaoyu.cn/43a76215e5ca768b3594e2ba6c103fdc.png"
+                                            width="20px" height="45px" class="zoomerbox">=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">：<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=0.6<em>A</em>：0.4<em>A</em>=3：2．<br>故选<em>A</em>．<br>点评：本题考查了并联电路的特点以及欧姆定律的应用，关键明确电路在不同情况下的连接方式以及电流表测量的对象．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1289472" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">2</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-1 inline-block h-center f-small ml-10 mr-10">易</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>在如图所示的电路中，当滑动变阻器的滑片<em>P</em>移动时，导致电压表<em>V</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">读数变大，则下列关于其它电表读数变化情况的说法中，正确的是（ ）<br><img
+                                        src="https://qdimg.okjiaoyu.cn/5860095639e40ad1be441f1f2293f5ee.png"
+                                        width="168px" height="109px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>V</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px" class="zoomerbox">、<em>A</em>读数均变大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>V</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                                    width="7px" height="20px" class="zoomerbox">、<em>V</em>读数均变大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>V</em>、<em>A</em>读数均变大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>V</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                                    width="7px" height="20px" class="zoomerbox">、<em>V</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px" class="zoomerbox">读数均变大<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> A </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；电流表的使用；电压表的使用；滑动变阻器的使用．<br>专题：应用题．<br>分析：（1）由电路图可知，四个电阻串联，电流表测量电路中的电流，电压表<em>V</em>测量<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">、<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">、<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                            width="7px" height="20px" class="zoomerbox">两端电压之和；电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">两端的电压；电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">两端的电压；电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                            width="7px" height="20px" class="zoomerbox">两端的电压；<br>（2）由于电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">的示数变大，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的阻值不变，由欧姆定律可得，电路中电流变大，说明滑动变阻器接入电路中的电阻变小，然后结合<em>U</em>=<em>IR</em>分析其它电压表示数的变化情况．<br>解答：解：如图所示：<br><img
+                                            src="https://qdimg.okjiaoyu.cn/51cf4510c39993b73bdf2791724a523b.png"
+                                            width="175px" height="112px" class="zoomerbox"><br>①因为电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">的示数变大，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">的阻值不变，由<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/4c9d13be2baddbe584e3aa199e865270.png"
+                                            width="20px" height="41px"
+                                            class="zoomerbox">可得，电路中电流变大，即电流表<em>A</em>示数变大；<br>②因为<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">、<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/53687ec4f0bd252314999f83b66c8636.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的阻值不变，由<em>U</em>=<em>IR</em>可得，电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">、<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/53687ec4f0bd252314999f83b66c8636.png"
+                                            width="7px" height="20px" class="zoomerbox">两端的电压变大，故电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">的示数变大；<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/53687ec4f0bd252314999f83b66c8636.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">两端的电压变大；<br>③因为电源电压不变，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/53687ec4f0bd252314999f83b66c8636.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">两端的电压变大，由串联电路电压的特点可得，<em>V</em>的示数变小；而电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">和电压表<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">示数均变大，故<em>V</em><img
+                                            src="https://qdimg.okjiaoyu.cn/36ea277ce4bcc71fdaf9bd630d5babf6.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的示数减小．<br>故选<em>A</em>．<br>点评：本题考查了串联电路的特点、电压表、电流表的使用以及欧姆定律的灵活运用；本题的关键是分析电路图，能够识别电路的连接方式，分清电表的测量对象．<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1277830" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">3</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-1 inline-block h-center f-small ml-10 mr-10">易</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>白炽灯泡的灯丝断开后，可把断头搭接起来继续使用，这时灯丝的（ ）<br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻变大，电流减小<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻变小，电流增大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻和电流都增大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻和电流都减小<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> B </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：影响电阻大小的因素；欧姆定律的应用．<br>专题：应用题．<br>分析：灯丝断了以后再搭接起来继续使用，长度变短，横截面积变大，电阻变小，根据公式<img
+                                            src="https://qdimg.okjiaoyu.cn/c96a8d198958958c9f48674e53b93e7f.png"
+                                            width="44px" height="41px"
+                                            class="zoomerbox">可知电流的变化．<br>解答：解：把断头搭接起来继续使用，灯丝的长度变短，横截面积变大，电阻变小，根据公式<img
+                                            src="https://qdimg.okjiaoyu.cn/408d9a85603c380b53ca98db866825be.png"
+                                            width="44px" height="41px"
+                                            class="zoomerbox">可知电流变大．<br>故选<em>B</em>．<br>点评：本题考查欧姆定律的应用和影响电阻大小的因素，关键知道影响电阻大小的因素是导体的长度、横截面积、材料和温度．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1277826" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">4</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-1 inline-block h-center f-small ml-10 mr-10">易</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>根据欧姆定律公式<img src="https://qdimg.okjiaoyu.cn/e29f3fcbba155a83f2a108826d844068.png"
+                                        width="44px" height="41px" class="zoomerbox">，也可变形得到<img
+                                        src="https://qdimg.okjiaoyu.cn/5bf3000dc345818adf723e3b8bf898ba.png"
+                                        width="47px" height="41px" class="zoomerbox">．对此，下列说法中正确的是（ ）<br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>流过导体的电流越大，则电阻越小<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>某段导体两端电压为0时，其电阻为0<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>导体两端的电压跟通过导体电流的比值等于这段导体的电阻<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>导体电阻的大小跟导体两端的电压成正比，跟通过导体的电流成反比<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> C </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律．<br>专题：欧姆定律．<br>分析：（1）导体电阻的影响因素：导体的长度、横截面积、材料．<br>（2）可以用导体两端的电压与通过导体的电流的比值（<img
+                                            src="https://qdimg.okjiaoyu.cn/0cd3ec48a9ac94ee23aeb86955878976.png"
+                                            width="47px" height="41px"
+                                            class="zoomerbox">）求出其大小，但电阻与电压、电流都无关．<br>解答：解：电阻是导体本身所具有的性质，与通过它的电流、它两端的电压无关，故<em>A</em>、<em>B</em>、<em>D</em>错误；<br>导体电阻的大小可以由公式<img
+                                            src="https://qdimg.okjiaoyu.cn/da019fb6dc3774feccbb58ab99ecd2da.png"
+                                            width="47px" height="41px"
+                                            class="zoomerbox">求出，故<em>C</em>正确．<br>故选<em>C</em>．<br>点评：本题考查欧姆定律及其公式变形的应用，关键知道影响电阻大小的因素是导体的材料、长度、横截面积和温度，与导体两端的电压和通过的电流无关．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1277784" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">5</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-1 inline-block h-center f-small ml-10 mr-10">易</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>关于电流、电压和电阻的关系，下列说法正确的是（ ）<br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>通过导体的电流越大，这段导体的电阻一定越少<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电路两端有电压，电路中就一定会有电流<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>通过导体的电流跟导体两端的电压成正比，跟导体的电阻成反比<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>导体电阻跟导体两端的电压成正比，跟导体中的电流成反比<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> C </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律．<br>专题：欧姆定律．<br>分析：欧姆定律内容：导体中的电流跟导体两端的电压成正比，跟导体的电阻成反比．也就是说在电压一定时，导体中的电流跟导体的电阻成反比；在电阻一定时，导体中的电流跟导体两端的电压成正比．而电阻是导体本身的一种性质，与导体的电压与电流无关．<br>解答：解：<em>AD</em>、电阻是导体本身的一种性质，与导体的电压与电流无关．故<em>AD</em>错误；<br><em>B</em>、根据形成持续电流的条件可知，一是闭合电路，二是导体两端有电压，因此只有电压不一定能形成电流，故<em>B</em>错误；
+                                        <br><em>C</em>、通过导体的电流跟导体两端电压成正比，跟导体的电阻成反比，是欧姆定律的内容，故<em>C</em>正确．<br>故选<em>C</em>．<br>点评：本题考查了电阻的性质、欧姆定律内容的理解和掌握．要知道电流跟电压成正比，电流跟电阻成反比都是有条件的．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1289769" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">6</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>一个定值电阻两端电压为3<em>V</em>时，通过它的电流为0.15<em>A</em>，当定值电阻两端电压降低为原来的一半时，则下列说法正确的是（ ）<br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电流为原来的1/2<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻为原来的2倍<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电流为原来的2倍<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电阻为原来的1/2<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> A </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；影响电阻大小的因素．<br>专题：压轴题．<br>分析：导体的电阻是导体的本质属性，与导体的材料，长度，横截面积有关，不会随电压的改变而改变．根据欧姆定律可知两端电压降低为原来的一半时的电流．<br>解答：解：导体的电阻是导体的本质属性，不会随电压的改变而改变．所以电阻不变，故<em>B</em>、<em>D</em>错误<br>电阻不变，电压降低为原来的一半，根据欧姆定律<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/53ddd1000c576d3c3470f942601a5127.png"
+                                            width="20px" height="41px"
+                                            class="zoomerbox">可知电流为原来的一半，所以<em>A</em>正确，<em>C</em>错误．<br>故选<em>A</em>．<br>点评：本题考查学生对导体电阻的理解和结合欧姆定律判断电流变化的能力．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1290277" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">7</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示的电路中，电源两端电压为6<em>V</em>并保持不变，定值电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">的阻值为10<em>Ω</em>，滑动变阻器<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px"
+                                        class="zoomerbox">的最大阻值为50<em>Ω</em>．当开关<em>S</em>闭合，滑动变阻器的滑片<em>P</em>由<em>b</em>端移到<em>a</em>端的过程中，下列说法中正确的是（
+                                    ）<br><img src="https://qdimg.okjiaoyu.cn/c809a2347c2722a21ee2c555d91edf21.png"
+                                        width="139px" height="89px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表的示数变大，电流表的示数变小<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电流表和电压表的示数都不变<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电流表的示数变化范围为0.2<em>A</em>～0.6<em>A</em><br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表的示数变化范围为1<em>V</em>～6<em>V</em><br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> D </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；滑动变阻器的使用．<br>分析：此题考查欧姆定律的应用和电路变化的具体应用，比较难的是电压表和电流表的变化范围的确定，关键是要找准两个状态进行分析，同时要注意变化时哪些量是不变的，哪些量是变化的．<br>解答：解：此电路是一个串联电路，电压表测量<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">两端的电压．当滑片由<em>b</em>端移到<em>a</em>端的过程中，滑动变阻器的阻值变小，电路中的总电阻变小，电源电压不变，根据欧姆定律可知电路中的电流变大，所以电流表示数变大，滑动变阻器阻值变小，所分得电压减小，电源电压不变，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">两端电压变大，所以电压表示数变大．故可排除<em>A</em>、<em>B</em>选项．<br>当滑片在<em>b</em>端时，<em>R</em>=<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">+<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=10<em>Ω</em>+50<em>Ω</em>=60<em>Ω</em>，<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/973725dafe725f6089b5ae9ac9f1e954.png"
+                                            width="112px" height="41px" class="zoomerbox">，<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>IR</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=0.1<em>A</em>×10<em>Ω</em>=1<em>V</em>，<br>当滑片在<em>a</em>端时，电路中只有<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">，此时，<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/30bdd885ccfd9f2175ab1803634ab358.png"
+                                            width="113px" height="45px" class="zoomerbox">，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">两端电压为电源电压，电压表示数为6<em>V</em>．<br>所以，滑片由<em>b</em>端移到<em>a</em>端的过程中，电流表的示数变化范围是0.1<em>A</em>～0.6<em>A</em>，电压表的示数变化范围是1<em>V</em>～6<em>V</em>，因此，<em>C</em>选项错误，<em>D</em>选项正确．<br>故答案为：<em>D</em><br>点评：很多物理情景是一个变化的过程，对此类问题一定要把它分解成两个状态，然后对两个状态分别进行分析，分析时一定要明确哪些量是不变的、是已知的．哪些量是变化的．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1290431" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">8</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示电路，闭合开关后，将滑动变阻器滑片<em>P</em>由<em>a</em>端向<em>b</em>端滑动的过程中，图中电压表和电流表的示数变化正确的是（
+                                    ）<br><img src="https://qdimg.okjiaoyu.cn/af4f64177e6d432994277608ce32a048.png"
+                                        width="139px" height="136px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表示数不变，电流表示数变大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表示数变小，电流表示数变大<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表示数不变，电流表示数变小<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>电压表示数变大，电流表示数变小<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> C </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；滑动变阻器的使用；电路的动态分析．<br>分析：当滑动变阻器滑片由<em>a</em>向<em>b</em>滑动时，可得出接入电阻的变化，由欧姆定律可知电路中电流的变化；电压表接在电源两端，则可知电压表示数保持不变．<br>解答：解：当滑动变阻器的滑片<em>P</em>由<em>a</em>端向<em>b</em>端滑动时，连入电路中电阻变大，从而使电路中的总电阻变大，电源电压不变，根据欧姆定律，电路中的总电流变小，即电流表示数变小．而电压表测量的是电源两端电压，故示数不变．<br>故选<em>C</em>．<br>点评：解决动态分析的题关键在于根据电路中电阻的变化利用欧姆定律得出干路电流的变化，再具体分析部分电路中电流或电压的变化．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1277834" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">9</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示是两电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">、<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">的<em>U</em>﹣<em>I</em>图线，由图可知（ ）<br><img
+                                        src="https://qdimg.okjiaoyu.cn/367a50efcc620cd605ef31790a0e5a89.png"
+                                        width="200px" height="189px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px"
+                                                    class="zoomerbox">=20<em>Ω</em>，<em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                                    width="7px" height="20px" class="zoomerbox">=10<em>Ω</em><br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px"
+                                                    class="zoomerbox">=10<em>Ω</em>，<em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                                    width="7px" height="20px" class="zoomerbox">=20<em>Ω</em><br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px"
+                                                    class="zoomerbox">=30<em>Ω</em>，<em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                                    width="7px" height="20px" class="zoomerbox">=20<em>Ω</em><br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p><em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                                    width="7px" height="20px"
+                                                    class="zoomerbox">=20<em>Ω</em>，<em>R</em><img
+                                                    src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                                    width="7px" height="20px" class="zoomerbox">=30<em>Ω</em><br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> A </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：电阻；欧姆定律的变形公式．<br>专题：压轴题；图析法．<br>分析：确定一个电流，根据图象找出<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">和<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">对应的电压，然后根据<img
+                                            src="https://qdimg.okjiaoyu.cn/8b60052f4adfbb50db3034542c67ff3c.png"
+                                            width="47px" height="41px" class="zoomerbox">求出<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">和<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的阻值．<br>解答：解：当电流为0.1<em>A</em>时，分析图象，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">对应的电压为2<em>V</em>，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">对应的电压为1<em>V</em>．<br>电阻<img
+                                            src="https://qdimg.okjiaoyu.cn/d278833b14bd2e6d54945ff4a09a7b74.png"
+                                            width="147px" height="45px" class="zoomerbox">；电阻<img
+                                            src="https://qdimg.okjiaoyu.cn/d095c5892a1b28fe8f3b3d54bf7c3f1c.png"
+                                            width="148px" height="45px"
+                                            class="zoomerbox">．<br>故选<em>A</em>．<br>点评：此题考查图象的分析能力和欧姆定律变形公式的应用；<br>图象的分析是初中物理学生必备的一种能力，需要掌握．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-display" data-id="1277785" data-uploadid="62951085355" data-type="1"
+                            data-payload="" data-type-name="选择题" data-structid="1" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">10</span>
+
+                                <span class="quiz-type mr-10"> 单选题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示的电路中，电源电压保持不变．当开关<em>S</em>由断开到闭合，电流表两次示数之比是1：5，由此可知，电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">与<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">之比是（ ）<br><img
+                                        src="https://qdimg.okjiaoyu.cn/cf9cca7063ad7fa0c9b74df6840ba2b5.png"
+                                        width="134px" height="90px" class="zoomerbox"><br></p>
+                            </div>
+                            <div class="quiz-options f-wrap">
+                                <ol class="mt-25 mb-20">
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">A.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>5：1<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">B.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>1：5<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">C.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>1：4<br></p>
+                                        </span>
+                                    </li>
+                                    <li class="option mt-15">
+                                        <span class="option-value inline-block">D.</span>
+                                        <span class="option-content inline-block  f-wrap">
+                                            <p>4：1<br></p>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank mr-5 ml-5 inline-block">
+                                        <div class="inline-block item"> D </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：电路的动态分析；并联电路的电压规律；欧姆定律．<br>专题：压轴题；推理法；图析法．<br>分析：开关<em>S</em>断开时只有<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">接入电路，开关<em>S</em>闭合时两电阻并联，因为电源电压保持不变，所以闭合开关<em>S</em>前后通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的电流不变，从而得出当开关<em>S</em>闭合时，通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的电流与干路电流<em>I</em>的关系，进而得出通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">的电流和通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的电流关系，再根据并联电阻的电压关系和欧姆定律求解．<br>解答：解：由图可知，开关断开时只有<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">接入电路，开关闭合时两电阻并联，<br>∵开关<em>S</em>断开时电流表测量通过<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">电流，开关<em>S</em>闭合时，电流表测量干路电流，<br>∵电源电压保持不变，<br>∴闭合开关<em>S</em>前后通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">的电流不变，<br>∴<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">：<em>I</em>=1：5，<br>∴<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">：<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">=1：4，<br>∵<img
+                                            src="https://qdimg.okjiaoyu.cn/80f17a470d857575f5ebf59214a41ce0.png"
+                                            width="44px" height="41px" class="zoomerbox">，两电阻并联<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">，<br>∴<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox"><em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox"><em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">，<br>∴<img
+                                            src="https://qdimg.okjiaoyu.cn/0e971ba6f921dd2542a372e94a0dab3f.png"
+                                            width="81px" height="45px"
+                                            class="zoomerbox">．<br>故选<em>D</em>．<br>点评：会电路动态分析：开关断开时只有<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">接入电路，开关闭合时两电阻并联，因电源电压保持不变，闭合开关<em>S</em>前后通过电阻<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">的电流不变，这是本题的关键．<br> <br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-group">
+                    <div class="quiz-type-title">
+                        <span class="quiz-type-name">填空题</span>
+                        <span class="type-count">(5题)</span>
+                    </div>
+                    <div class="quiz-list">
+                        <div class="quiz-display" data-id="1295555" data-uploadid="62951085355" data-type="2"
+                            data-payload="" data-type-name="填空题" data-structid="4" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">11</span>
+
+                                <span class="quiz-type mr-10"> 填空题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+                                <span
+                                    class="inline-block f-small intelligent-flag f-gray ml-10 mr-10 pl-10 pr-10">辅助批改</span>
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>甲、乙两个定值电阻，甲标有“16<em>Ω</em> 1.5<em>A</em>”、乙标有“22<em>Ω</em>
+                                    0.5<em>A</em>”．现把它们串联起来，为保证电阻工作安全，则该串联电路两端允许加的最大电压为<input type="text"
+                                        readonly="true" class="questions-blank" value="1"
+                                        contenteditable="true"><em>V</em>．<br></p>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank-box pl-5 clearfix">
+                                        <div class="blank"> <span class="bindex fl"></span>
+                                            <div class="block blank-item ">
+                                                <p>19</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用．<br>专题：欧姆定律．<br>分析：串联电路电流处处相等．若将两个电阻串联起来，为保证电阻工作安全，则电流只能取0.5<em>A</em>，因为取1.5<em>A</em>，乙电阻会被烧坏；然后算出两个电阻的总电阻，最后用公式<em>U</em>=<em>IR</em>算出电源电压．<br>解答：解：若两电阻串联起来，则电流只可取0.5<em>A</em>，<br>电路的总电阻：<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d25f43fa6263e204d55a052420c368d9.png"
+                                            width="10px" height="20px" class="zoomerbox">=<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b5829fb6dfada4da821fe5df1be31949.png"
+                                            width="10px" height="20px" class="zoomerbox">+<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b151913d4e209ae11d7936ebec2dd42c.png"
+                                            width="10px" height="20px"
+                                            class="zoomerbox">=16<em>Ω</em>+22<em>Ω</em>=38<em>Ω</em>，<br>∵<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/da6b4643642bee765b5918867d716a4e.png"
+                                            width="20px" height="41px" class="zoomerbox">，<br>∴电路的最大电压：<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d25f43fa6263e204d55a052420c368d9.png"
+                                            width="10px" height="20px" class="zoomerbox">=<em>IR</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d25f43fa6263e204d55a052420c368d9.png"
+                                            width="10px" height="20px"
+                                            class="zoomerbox">=0.5<em>A</em>×38<em>Ω</em>=19<em>V</em>．<br>故答案为：19．<br>点评：此题考查的是串联电路中用电器的工作电流与规格的关系，解决此类问题的一般规律是：“面面俱到，照顾弱小”．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quiz-correct-rules f-wrap pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block correct-rules-label"></span>
+                                <div class="correct-rules-content">
+                                    <div class="blank-box pl-5">
+                                        <div class="wgt-loading"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="quiz-display" data-id="1295433" data-uploadid="62951085355" data-type="2"
+                            data-payload="" data-type-name="填空题" data-structid="4" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">12</span>
+
+                                <span class="quiz-type mr-10"> 填空题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+                                <span
+                                    class="inline-block f-small intelligent-flag f-gray ml-10 mr-10 pl-10 pr-10">辅助批改</span>
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>将一个标有“3<em>V</em>、3<em>W</em>”字样的灯泡接到9<em>V</em>的电源上，若要让它正常工作，应串联一个<input type="text"
+                                        readonly="true" class="questions-blank" value="1"
+                                        contenteditable="true"><em>Ω</em>的电阻．<br></p>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank-box pl-5 clearfix">
+                                        <div class="blank"> <span class="bindex fl"></span>
+                                            <div class="block blank-item ">
+                                                <p>6</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；串联电路的电流规律；串联电路的电压规律；电功率的计算．<br>专题：计算题；应用题．<br>分析：由铭牌可知灯泡的额定电压和额定电流，根据<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/f36cce0f4e40432c5316b4acd436ef68.png"
+                                            width="20px" height="41px"
+                                            class="zoomerbox">求出灯泡的额定电流；灯泡正常工作时的电压和额定电压相等，根据串联电路的电压特点求出电阻两端的电压，根据欧姆定律求出电阻的阻值．<br>解答：解：灯泡正常工作时的电压<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d550630ed7a8b1a85986ee1102d7c8ca.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=3<em>V</em>，<br>电路中的电流<em>I</em>=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d550630ed7a8b1a85986ee1102d7c8ca.png"
+                                            width="7px" height="20px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/d3ab2dd23350f8f3bc0ab73dcdd8d20f.png"
+                                            width="27px" height="45px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/70a465f65e694fd3afc83863abeddf86.png"
+                                            width="29px" height="41px"
+                                            class="zoomerbox">=1<em>A</em>，<br>电阻两端的电压<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/df7b77e43ecacdcf7adf29d1422b6f2b.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>U</em>﹣<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/d550630ed7a8b1a85986ee1102d7c8ca.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=9<em>V</em>﹣3<em>V</em>=6<em>V</em>，<br>电阻的阻值<em>R</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/a8cf52e5c100a7d8359f6de4ebe161ae.png"
+                                            width="27px" height="41px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/99b7d1adc42da3673b9b4e48949f8e1a.png"
+                                            width="27px" height="41px"
+                                            class="zoomerbox">=6<em>Ω</em>．<br>故答案为：6．<br>点评：本题考查了串联电路的特点和欧姆定律、电功率公式的应用，关键是知道灯泡正常工作时的电压和额定电压相等．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quiz-correct-rules f-wrap pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block correct-rules-label"></span>
+                                <div class="correct-rules-content">
+                                    <div class="blank-box pl-5">
+                                        <div class="wgt-loading"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="quiz-display" data-id="1295296" data-uploadid="62951085355" data-type="2"
+                            data-payload="" data-type-name="填空题" data-structid="4" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">13</span>
+
+                                <span class="quiz-type mr-10"> 填空题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>如图所示电路中，电源电压保持不变，电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px"
+                                        class="zoomerbox">的阻值为20<em>Ω</em>，闭合开关<em>S</em>．电流表<em>A</em><img
+                                        src="https://qdimg.okjiaoyu.cn/570e400876f2f2311fb57ffa1bc236ed.png" width="7px"
+                                        height="20px" class="zoomerbox">的示数为0.3<em>A</em>，电流表<em>A</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">的示数为0.1<em>A</em>，则电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">=<input type="text" readonly="true"
+                                        class="questions-blank" value="1" contenteditable="true"><em>Ω</em><br><img
+                                        src="https://qdimg.okjiaoyu.cn/a6a1a7ea88e30e20e358b20fe4af1805.png"
+                                        width="127px" height="101px" class="zoomerbox"><br></p>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank-box pl-5 clearfix">
+                                        <div class="blank"> <span class="bindex fl"></span>
+                                            <div class="block blank-item ">
+                                                <p>60．</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；并联电路的电压规律．<br>专题：应用题；电路和欧姆定律．<br>分析：由电路图可知，电阻并联，电流表<em>A</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">支路的电流，电流表<em>A</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">支路的电流，根据欧姆定律表示出两支路的电流，利用并联电路中各支路两端的电压相等得出等式即可求出<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">的阻值．<br>解答：解：由电路图可知，电阻并联，电流表<em>A</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">支路的电流，电流表<em>A</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">测<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">支路的电流，<br>∵并联电路中各支路两端的电压相等，<br>∴根据欧姆定律可得：<em>U</em>=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox"><em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox"><em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">，即0.3<em>A</em>×20<em>Ω</em>=0.1<em>A</em>×<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">，<br>解得：<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=60<em>Ω</em>．<br>故答案为：60．<br>点评：本题考查了欧姆定律的应用，涉及到并联电路的电压特点，是一道基础题目．<br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quiz-correct-rules f-wrap pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block correct-rules-label"></span>
+                                <div class="correct-rules-content">
+                                    <div class="blank-box pl-5">
+                                        <div class="wgt-loading"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="quiz-display" data-id="1276538" data-uploadid="62951085355" data-type="2"
+                            data-payload="" data-type-name="填空题" data-structid="4" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">14</span>
+
+                                <span class="quiz-type mr-10"> 填空题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+                                <span
+                                    class="inline-block f-small intelligent-flag f-gray ml-10 mr-10 pl-10 pr-10">辅助批改</span>
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>在如图所示的电路中，电源电压不变，<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px" class="zoomerbox">=10<em>Ω</em>．<em>S</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">闭合、<em>S</em><img
+                                        src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png" width="7px"
+                                        height="20px"
+                                        class="zoomerbox">断开时，电流表的示数为0.2<em>A</em>．两开关都闭合时，电流表的示数为0.5<em>A</em>，则电阻<em>R</em><img
+                                        src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png" width="7px"
+                                        height="20px" class="zoomerbox">=<input type="text" readonly="true"
+                                        class="questions-blank" value="1" contenteditable="true"><em>Ω</em>．<br><img
+                                        src="https://qdimg.okjiaoyu.cn/9d282e97539ce5310d688d37cfba3191.png"
+                                        width="166px" height="94px" class="zoomerbox"><br></p>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank-box pl-5 clearfix">
+                                        <div class="blank"> <span class="bindex fl"></span>
+                                            <div class="block blank-item ">
+                                                <p>15</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用；并联电路的电流规律．<br>专题：计算题；压轴题．<br>分析：根据<em>S</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">闭合、<em>S</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">断开时，电流表的示数为0.2<em>A</em>，求出<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">，当两开关都闭合时，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">和<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">并联．则<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=<em>U</em>，再根据并联电路的电流规律<em>I</em>=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">+<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">即可求出<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">．<br>解答：解：∵<em>I</em>=<img
+                                            src="https://qdimg.okjiaoyu.cn/4eedf988ba494026e1b5225533f118f5.png"
+                                            width="20px" height="41px" class="zoomerbox">，<br>∴<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">×0.2<em>A</em>，<br>∵又两开关都闭合时，电阻并联，<br>∴<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>U</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">=<em>U</em>=<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">×0.2<em>A</em>，<br>∴<em>I</em>=<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px" class="zoomerbox">+<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/650834f5542d8ad924e67a0494a6cd9a.png"
+                                            width="7px" height="20px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/4f5c2584950a66daeca118de9038041c.png"
+                                            width="24px" height="45px" class="zoomerbox">+<img
+                                            src="https://qdimg.okjiaoyu.cn/b66628844f6af3576128723f33016820.png"
+                                            width="25px" height="45px" class="zoomerbox">=<img
+                                            src="https://qdimg.okjiaoyu.cn/a67ff752e5c67e0982ed8604697e5ea5.png"
+                                            width="65px" height="45px" class="zoomerbox">+<img
+                                            src="https://qdimg.okjiaoyu.cn/da1efadbb973df2d933f3f0babd9b1b2.png"
+                                            width="65px" height="41px"
+                                            class="zoomerbox">=0.5<em>A</em>，<br>解得<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/cb62ba94730f236fac981a90be18be9c.png"
+                                            width="7px" height="20px"
+                                            class="zoomerbox">=15<em>Ω</em>．<br>故答案为：15．<br>点评：此题主要考查学生对欧姆定律的应用和并联电路的电流规律等知识点，解得此题的关键是利用已知条件求出电源电压，稍有难度，属于中档题．<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quiz-correct-rules f-wrap pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block correct-rules-label"></span>
+                                <div class="correct-rules-content">
+                                    <div class="blank-box pl-5">
+                                        <div class="wgt-loading"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="quiz-display" data-id="1236891" data-uploadid="62951085355" data-type="2"
+                            data-payload="" data-type-name="填空题" data-structid="4" data-vacancy="1"
+                            data-collection-id="">
+                            <div class="quiz-title f-wrap mt-15 mb-15 inline-block">
+                                <span class="quiz-index mr-10">15</span>
+
+                                <span class="quiz-type mr-10"> 填空题 </span>
+
+                                <span class="quiz-hard-level level-2 inline-block h-center f-small ml-10 mr-10">中</span>
+
+
+                            </div>
+                            <div class="quiz-body f-wrap mt-20 mb-20">
+                                <p>在甲、乙两个不同导体两端加相同的电压，但产生的电流<em>I</em><img
+                                        src="https://qdimg.okjiaoyu.cn/b5829fb6dfada4da821fe5df1be31949.png"
+                                        width="10px" height="20px" class="zoomerbox">＞<em>I</em><img
+                                        src="https://qdimg.okjiaoyu.cn/b151913d4e209ae11d7936ebec2dd42c.png"
+                                        width="10px" height="20px" class="zoomerbox">，则甲导体的电阻 <input type="text"
+                                        readonly="true" class="questions-blank" value="1"
+                                        contenteditable="true">乙导体的电阻．<br></p>
+                            </div><a class="question-shrink cur-pointer inline-block f-blue"
+                                data-target="answer|analysis|correct-rules" data-text="查看解析">查看解析</a>
+                            <div class="quiz-answer f-wrap pt-20 pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block answer-label"></span>
+                                <div class="answer-content">
+                                    <div class="blank-box pl-5 clearfix">
+                                        <div class="blank"> <span class="bindex fl"></span>
+                                            <div class="block blank-item ">
+                                                <p>小于．</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-analysis f-wrap pb-20" style="display: none;">
+                                <span class="label mb-15 inline-block analysis-label"></span>
+                                <div class="analysis-content ml-5">
+                                    <p>考点：欧姆定律的应用．<br>分析：导体的电阻是不变的，根据欧姆定律和电流大小可比较两导体的电阻大小．<br>解答：解：∵<img
+                                            src="https://qdimg.okjiaoyu.cn/7a3c61b89ad101efb3063f379214bbb6.png"
+                                            width="57px" height="47px" class="zoomerbox">，<img
+                                            src="https://qdimg.okjiaoyu.cn/c880bc7356762114656063de2cd8ffa7.png"
+                                            width="59px" height="45px" class="zoomerbox"><br>∴<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b5829fb6dfada4da821fe5df1be31949.png"
+                                            width="10px" height="20px" class="zoomerbox">＞<em>I</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b151913d4e209ae11d7936ebec2dd42c.png"
+                                            width="10px" height="20px" class="zoomerbox">，<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b5829fb6dfada4da821fe5df1be31949.png"
+                                            width="10px" height="20px" class="zoomerbox">＜<em>R</em><img
+                                            src="https://qdimg.okjiaoyu.cn/b151913d4e209ae11d7936ebec2dd42c.png"
+                                            width="10px" height="20px"
+                                            class="zoomerbox"><br>故答案为：小于．<br>点评：本题考查学生能否根据欧姆定律计算导体的电阻并判断其大小．<br></p>
+                                </div>
+                            </div>
+                            <div class="quiz-correct-rules f-wrap pb-25" style="display: none;">
+                                <span class="label mb-15 inline-block correct-rules-label"></span>
+                                <div class="correct-rules-content">
+                                    <div class="blank-box pl-5">
+                                        <div class="wgt-loading"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ui-widget-overlay ui-front" style="z-index: 150;"></div>
+</body>
+
+</html>
